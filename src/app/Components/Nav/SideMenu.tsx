@@ -5,7 +5,7 @@ import { IoArrowBackSharp } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { IoIosArrowUp } from "react-icons/io";
-import { navData } from "@/app/Data/navData";
+import { navData } from "@/app/Data/Data";
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

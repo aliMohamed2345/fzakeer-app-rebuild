@@ -1,6 +1,6 @@
 "use client";
 import Theme from "./Theme";
-import { navData } from "@/app/Data/navData";
+import { navData } from "@/app/Data/Data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import QuranDetailsMenu from "./QuranDetailsMenu";

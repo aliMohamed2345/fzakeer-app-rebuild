@@ -101,23 +101,34 @@ html {
   scroll-behavior: smooth;
 }
 
-/* use the Amiri font for arabic text */
+/* use the Amiri and Uthmani font for arabic text */
 @font-face {
   font-family: "Amiri";
-  src: url("/public/fonts/Amiri-Regular.ttf") format("truetype");
+  src: url("/fonts/Amiri-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Amiri";
-  src: url("/public/fonts/Amiri-Bold.ttf");
+  src: url("/fonts/Amiri-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Uthmani";
+  src: url("/fonts/UthmanTN_v2-0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uthmani";
+  src: url("/fonts/UthmanTNB_v2-0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
-  font-family: "Amiri", serif;
+  font-family: "Uthmani", "Amiri", serif;
   min-height: 100vh;
   background: var(--color-background);
   color: var(--color-foreground);
