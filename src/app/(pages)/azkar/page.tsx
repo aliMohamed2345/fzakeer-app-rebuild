@@ -20,7 +20,7 @@ const Azkar = () => {
   const [azkarData, setAzkarData] = useState<zekrProps[]>(
     azkar["أذكار الصباح"]
   );
-  const [counts, setCounts] = useState<number[]>([]); 
+  const [counts, setCounts] = useState<number[]>([]);
   const [showAlert, setShowAlert] = useState<boolean>(false);
 
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -59,12 +59,12 @@ const Azkar = () => {
         </h4>
       </div>
 
-      <div className="p-4 rounded-lg w-full max-w-[1200px] bg-primary mx-auto my-6 border-background-foreground border-2">
+      <div className="p-4 rounded-lg w-full max-w-[1200px] bg-muted mx-auto my-6  border border-primary">
         {/* Category buttons */}
-        <div className="bg-muted flex items-center gap-2 p-2 rounded-md overflow-x-auto sm:justify-center border-background-foreground border-2">
+        <div className="bg-background flex items-center gap-2 p-2 rounded-md overflow-x-auto sm:justify-center border border-secondary">
           <button
             onClick={scrollToLeft}
-            className="bg-card p-2 rounded-full hover:bg-primary hover:text-accent transition lg:hidden"
+            className="bg-card p-2 rounded-full hover:bg-primary hover:text-muted active:bg-primary active:text-muted transition lg:hidden cursor-pointer"
           >
             <IoIosArrowBack size={20} />
           </button>
@@ -77,9 +77,13 @@ const Azkar = () => {
               <button
                 key={i}
                 onClick={() => setCurrentCategory(category)}
-                className={`bg-card cursor-pointer whitespace-nowrap px-4 py-2 font-bold rounded-lg text-base sm:text-lg hover:bg-primary hover:text-accent transition-all ${
-                  category === currentCategory && "bg-primary text-accent"
-                }`}
+                className={`cursor-pointer whitespace-nowrap px-4 py-2 font-bold rounded-lg text-base sm:text-lg transition-all 
+    ${
+      category === currentCategory
+        ? "bg-primary text-muted"
+        : "bg-muted text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted"
+    }
+  `}
               >
                 {category}
               </button>
@@ -88,7 +92,7 @@ const Azkar = () => {
 
           <button
             onClick={scrollToRight}
-            className="bg-card p-2 rounded-full hover:bg-primary hover:text-accent transition lg:hidden"
+            className="bg-card p-2 rounded-full hover:bg-primary hover:text-muted active:bg-primary active:text-muted transition lg:hidden cursor-pointer"
           >
             <IoIosArrowForward size={20} />
           </button>
@@ -99,12 +103,12 @@ const Azkar = () => {
           {azkarData.map((zekr, i) => (
             <div
               key={i}
-              className="min-h-[200px] p-4 rounded-lg bg-background my-5 group flex items-center justify-center flex-col shadow-lg"
+              className="min-h-[200px] p-4 rounded-lg bg-background my-5 group flex items-center justify-center flex-col shadow-lg "
             >
-              <div className="flex items-start justify-between font-bold">
+              <div className="flex items-start justify-between font-bold w-full">
                 <button
                   onClick={() => handleCopy(zekr.content)}
-                  className="text-muted-foreground hover:text-accent transition rounded-xl p-2 hover:bg-muted cursor-pointer opacity-0 group-hover:opacity-100"
+                  className="text-muted-foreground hover:text-primary  hover:bg-muted active:text-primary active:bg-muted transition rounded-xl p-2 cursor-pointer sm:opacity-0 sm:group-hover:opacity-100"
                 >
                   <MdContentCopy size={20} />
                 </button>
@@ -112,7 +116,7 @@ const Azkar = () => {
                   {zekr.content}
                 </p>
               </div>
-              <p className="text-sm sm:text-lg font-bold text-muted-foreground self-start">
+              <p className="text-sm sm:text-lg font-bold text-muted-foreground self-start mt-5">
                 {zekr.description}
               </p>
 
@@ -122,8 +126,8 @@ const Azkar = () => {
                 disabled={counts[i] <= 0}
                 className={`p-3 w-12 h-12 cursor-pointer active:scale-90 transition-all rounded-full my-4 mx-auto flex justify-center items-center text-base sm:text-xl font-bold ${
                   counts[i] > 0
-                    ? "bg-primary text-accent"
-                    : "bg-destructive text-background-foreground cursor-not-allowed opacity-50"
+                    ? "bg-muted border-primary border text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted"
+                    : "bg-destructive text-muted cursor-not-allowed opacity-50"
                 }`}
               >
                 {counts[i] > 0 ? counts[i] : "0"}

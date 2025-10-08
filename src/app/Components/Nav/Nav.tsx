@@ -20,8 +20,8 @@ const Nav = () => {
                   className={`p-2 font-bold rounded-md flex items-center gap-2 transition-all bg-transparent
     ${
       path === navItem.href
-        ? "bg-secondary text-accent"
-        : "hover:bg-secondary hover:text-accent"
+        ? "bg-secondary text-muted"
+        : "hover:bg-secondary hover:text-muted active:bg-secondary active:text-muted" 
     }`}
                   href={navItem.href}
                 >

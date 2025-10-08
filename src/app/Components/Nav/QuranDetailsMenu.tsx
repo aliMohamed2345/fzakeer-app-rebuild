@@ -27,7 +27,7 @@ const QuranDetailsMenu = ({
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsMenuOpen((prev) => !prev)}
-        className={`p-2 font-bold rounded-md flex justify-between items-center gap-2 transition-all bg-transparent cursor-pointer hover:bg-secondary`}
+        className={`p-2 font-bold rounded-md flex justify-between items-center gap-2 transition-all hover:text-muted cursor-pointer hover:bg-secondary active:bg-secondary`}
       >
         {title}
         <MdOutlineKeyboardArrowDown
@@ -53,7 +53,7 @@ const QuranDetailsMenu = ({
           <Link
             key={navItem.id}
             href={navItem.href}
-            className="hover:text-accent hover:bg-secondary transition-colors p-0.5 rounded-md"
+            className="hover:text-muted hover:bg-secondary active:text-muted active:bg-secondary transition-colors p-0.5 rounded-md"
           >
             {navItem.name}
           </Link>

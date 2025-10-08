@@ -30,13 +30,13 @@ const Alert = ({ title, description, timer = 2, onClose }: AlertProps) => {
           : "opacity-0 translate-y-5 pointer-events-none"
       }`}
     >
-      <div className="relative bg-destructive text-destructive-foreground p-4 rounded-md min-w-[300px] border border-background shadow-lg">
+      <div className="relative bg-muted text-primary p-4 rounded-md min-w-[300px] border border-secondary shadow-lg">
         <button
           onClick={() => {
             setIsVisible(false);
             setTimeout(() => onClose?.(), 500);
           }}
-          className="absolute top-2 left-2 p-1 hover:bg-muted rounded-full transition-all"
+          className="absolute top-2 left-2 p-1 hover:bg-muted active:bg-muted rounded-full transition-all cursor-pointer"
         >
           <IoClose />
         </button>
