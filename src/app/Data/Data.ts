@@ -1046,51 +1046,57 @@ export const azkarCategories = [
   `أدعية الأنبياء`,
 ];
 
-export const hadithBooks = [
+
+
+export const HadithBooks = [
   {
-    name: "HR. Abu Daud",
+    name: "سنن أبي داود",
     id: "abu-daud",
     available: 4419,
   },
   {
-    name: "HR. Ahmad",
+    name: "مسند الإمام أحمد",
     id: "ahmad",
     available: 4305,
   },
   {
-    name: "HR. Bukhari",
+    name: "صحيح البخاري",
     id: "bukhari",
     available: 6638,
   },
   {
-    name: "HR. Darimi",
+    name: "سنن الدارمي",
     id: "darimi",
     available: 2949,
   },
   {
-    name: "HR. Ibnu Majah",
+    name: "سنن ابن ماجه",
     id: "ibnu-majah",
     available: 4285,
   },
   {
-    name: "HR. Malik",
+    name: "موطأ الإمام مالك",
     id: "malik",
     available: 1587,
   },
   {
-    name: "HR. Muslim",
+    name: "صحيح مسلم",
     id: "muslim",
     available: 4930,
   },
   {
-    name: "HR. Nasai",
+    name: "سنن النسائي",
     id: "nasai",
     available: 5364,
   },
   {
-    name: "HR. Tirmidzi",
+    name: "سنن الترمذي",
     id: "tirmidzi",
     available: 3625,
   },
 ];
-
+export interface HadithProps{
+  number:number , 
+  arab:string, 
+   id:string
+}
