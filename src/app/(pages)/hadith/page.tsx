@@ -118,7 +118,7 @@ const Hadith = () => {
       <div className="bg-muted border border-primary p-2 rounded-lg w-full max-w-[1200px] mx-auto my-6 text-right">
         <p className="text-primary text-3xl font-bold mb-6">اختر كتاب الحديث</p>
 
-        <div className="flex gap-2 items-center justify-end">
+        <div className="flex gap-2 items-center justify-end flex-col-reverse sm:flex-row">
           <div className="text-primary font-bold text-lg sm:text-xl bg-primary/20 p-3 rounded-md">
             <p>
               الصفحة {page} من {totalPages}
@@ -201,12 +201,12 @@ const Hadith = () => {
           <button
             disabled={page === totalPages}
             onClick={nextPage}
-            className="bg-muted border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-xl font-bold w-32 cursor-pointer"
+            className="bg-muted border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32 cursor-pointer"
           >
             &lt; التالي
           </button>
 
-          <div className="text-primary font-bold text-lg sm:text-xl bg-primary/20 p-3 rounded-md">
+          <div className="text-primary font-bold text-sm sm:text-xl bg-primary/20 p-3 rounded-md  hidden sm:block">
             <p>
               الصفحة {page} من {totalPages}
             </p>
@@ -215,7 +215,7 @@ const Hadith = () => {
           <button
             disabled={page === 1}
             onClick={prevPage}
-            className="bg-muted  border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-xl font-bold w-32 cursor-pointer"
+            className="bg-muted  border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32 cursor-pointer"
           >
             السابق &gt;
           </button>

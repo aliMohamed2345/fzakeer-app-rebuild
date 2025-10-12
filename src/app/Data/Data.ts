@@ -1,3 +1,6 @@
+import { IconType } from "react-icons";
+import { LuSunrise } from "react-icons/lu";
+
 export const navData = {
   mainData: [
     { id: 1, name: `الأذكار`, href: `/azkar` },
@@ -1046,8 +1049,6 @@ export const azkarCategories = [
   `أدعية الأنبياء`,
 ];
 
-
-
 export const HadithBooks = [
   {
     name: "سنن أبي داود",
@@ -1095,8 +1096,30 @@ export const HadithBooks = [
     available: 3625,
   },
 ];
-export interface HadithProps{
-  number:number , 
-  arab:string, 
-   id:string
+export interface HadithProps {
+  number: number;
+  arab: string;
+  id: string;
 }
+
+export const  MonthsInArabic ={
+  January: "يناير",
+  February: "فبراير",
+  March: "مارس",
+  April: "أبريل",
+  May: "مايو",
+  June: "يونيو",
+  July: "يوليو",
+  August: "أغسطس",
+  September: "سبتمبر",
+  October: "أكتوبر",
+  November: "نوفمبر",
+  December: "ديسمبر",
+};
+export const PrayerTimesInArabic = {
+  Fajr: "الفجر",
+  Dhuhr: "الظهر",
+  Asr: "العصر",
+  Maghrib: "المغرب",
+  Isha: "العشاء",
+};
