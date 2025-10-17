@@ -59,7 +59,7 @@ const Azkar = () => {
         </h4>
       </div>
 
-      <div className="p-4 rounded-lg w-full max-w-[1200px] bg-muted mx-auto my-6  border border-primary">
+      <div className="p-5 rounded-lg w-full max-w-[1200px] bg-muted mx-auto my-6  border border-primary">
         {/* Category buttons */}
         <div className="bg-background flex items-center gap-2 p-2 rounded-md overflow-x-auto sm:justify-center border border-secondary">
           <button

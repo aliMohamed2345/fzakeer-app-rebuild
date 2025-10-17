@@ -1,5 +1,8 @@
-import { IconType } from "react-icons";
-import { LuSunrise } from "react-icons/lu";
+import React from "react";
+import { SlControlPlay } from "react-icons/sl";
+import { MdOutlineContentCopy } from "react-icons/md";
+import { FiBookOpen } from "react-icons/fi";
+import { CiBookmark } from "react-icons/ci";
 
 export const navData = {
   mainData: [
@@ -1096,13 +1099,8 @@ export const HadithBooks = [
     available: 3625,
   },
 ];
-export interface HadithProps {
-  number: number;
-  arab: string;
-  id: string;
-}
 
-export const  MonthsInArabic ={
+export const MonthsInArabic = {
   January: "يناير",
   February: "فبراير",
   March: "مارس",
@@ -1123,3 +1121,322 @@ export const PrayerTimesInArabic = {
   Maghrib: "المغرب",
   Isha: "العشاء",
 };
+
+export const QuranSurahs = [
+  { number: 1, name: "الفاتحة", revelation: "مكية", ayahs: 7 },
+  { number: 2, name: "البقرة", revelation: "مدنية", ayahs: 286 },
+  { number: 3, name: "آل عمران", revelation: "مدنية", ayahs: 200 },
+  { number: 4, name: "النساء", revelation: "مدنية", ayahs: 176 },
+  { number: 5, name: "المائدة", revelation: "مدنية", ayahs: 120 },
+  { number: 6, name: "الأنعام", revelation: "مكية", ayahs: 165 },
+  { number: 7, name: "الأعراف", revelation: "مكية", ayahs: 206 },
+  { number: 8, name: "الأنفال", revelation: "مدنية", ayahs: 75 },
+  { number: 9, name: "التوبة", revelation: "مدنية", ayahs: 129 },
+  { number: 10, name: "يونس", revelation: "مكية", ayahs: 109 },
+  { number: 11, name: "هود", revelation: "مكية", ayahs: 123 },
+  { number: 12, name: "يوسف", revelation: "مكية", ayahs: 111 },
+  { number: 13, name: "الرعد", revelation: "مدنية", ayahs: 43 },
+  { number: 14, name: "إبراهيم", revelation: "مكية", ayahs: 52 },
+  { number: 15, name: "الحجر", revelation: "مكية", ayahs: 99 },
+  { number: 16, name: "النحل", revelation: "مكية", ayahs: 128 },
+  { number: 17, name: "الإسراء", revelation: "مكية", ayahs: 111 },
+  { number: 18, name: "الكهف", revelation: "مكية", ayahs: 110 },
+  { number: 19, name: "مريم", revelation: "مكية", ayahs: 98 },
+  { number: 20, name: "طه", revelation: "مكية", ayahs: 135 },
+  { number: 21, name: "الأنبياء", revelation: "مكية", ayahs: 112 },
+  { number: 22, name: "الحج", revelation: "مدنية", ayahs: 78 },
+  { number: 23, name: "المؤمنون", revelation: "مكية", ayahs: 118 },
+  { number: 24, name: "النور", revelation: "مدنية", ayahs: 64 },
+  { number: 25, name: "الفرقان", revelation: "مكية", ayahs: 77 },
+  { number: 26, name: "الشعراء", revelation: "مكية", ayahs: 227 },
+  { number: 27, name: "النمل", revelation: "مكية", ayahs: 93 },
+  { number: 28, name: "القصص", revelation: "مكية", ayahs: 88 },
+  { number: 29, name: "العنكبوت", revelation: "مكية", ayahs: 69 },
+  { number: 30, name: "الروم", revelation: "مكية", ayahs: 60 },
+  { number: 31, name: "لقمان", revelation: "مكية", ayahs: 34 },
+  { number: 32, name: "السجدة", revelation: "مكية", ayahs: 30 },
+  { number: 33, name: "الأحزاب", revelation: "مدنية", ayahs: 73 },
+  { number: 34, name: "سبإ", revelation: "مكية", ayahs: 54 },
+  { number: 35, name: "فاطر", revelation: "مكية", ayahs: 45 },
+  { number: 36, name: "يس", revelation: "مكية", ayahs: 83 },
+  { number: 37, name: "الصافات", revelation: "مكية", ayahs: 182 },
+  { number: 38, name: "ص", revelation: "مكية", ayahs: 88 },
+  { number: 39, name: "الزمر", revelation: "مكية", ayahs: 75 },
+  { number: 40, name: "غافر", revelation: "مكية", ayahs: 85 },
+  { number: 41, name: "فصلت", revelation: "مكية", ayahs: 54 },
+  { number: 42, name: "الشورى", revelation: "مكية", ayahs: 53 },
+  { number: 43, name: "الزخرف", revelation: "مكية", ayahs: 89 },
+  { number: 44, name: "الدخان", revelation: "مكية", ayahs: 59 },
+  { number: 45, name: "الجاثية", revelation: "مكية", ayahs: 37 },
+  { number: 46, name: "الأحقاف", revelation: "مكية", ayahs: 35 },
+  { number: 47, name: "محمد", revelation: "مدنية", ayahs: 38 },
+  { number: 48, name: "الفتح", revelation: "مدنية", ayahs: 29 },
+  { number: 49, name: "الحجرات", revelation: "مدنية", ayahs: 18 },
+  { number: 50, name: "ق", revelation: "مكية", ayahs: 45 },
+  { number: 51, name: "الذاريات", revelation: "مكية", ayahs: 60 },
+  { number: 52, name: "الطور", revelation: "مكية", ayahs: 49 },
+  { number: 53, name: "النجم", revelation: "مكية", ayahs: 62 },
+  { number: 54, name: "القمر", revelation: "مكية", ayahs: 55 },
+  { number: 55, name: "الرحمن", revelation: "مدنية", ayahs: 78 },
+  { number: 56, name: "الواقعة", revelation: "مكية", ayahs: 96 },
+  { number: 57, name: "الحديد", revelation: "مدنية", ayahs: 29 },
+  { number: 58, name: "المجادلة", revelation: "مدنية", ayahs: 22 },
+  { number: 59, name: "الحشر", revelation: "مدنية", ayahs: 24 },
+  { number: 60, name: "الممتحنة", revelation: "مدنية", ayahs: 13 },
+  { number: 61, name: "الصف", revelation: "مدنية", ayahs: 14 },
+  { number: 62, name: "الجمعة", revelation: "مدنية", ayahs: 11 },
+  { number: 63, name: "المنافقون", revelation: "مدنية", ayahs: 11 },
+  { number: 64, name: "التغابن", revelation: "مدنية", ayahs: 18 },
+  { number: 65, name: "الطلاق", revelation: "مدنية", ayahs: 12 },
+  { number: 66, name: "التحريم", revelation: "مدنية", ayahs: 12 },
+  { number: 67, name: "الملك", revelation: "مكية", ayahs: 30 },
+  { number: 68, name: "القلم", revelation: "مكية", ayahs: 52 },
+  { number: 69, name: "الحاقة", revelation: "مكية", ayahs: 52 },
+  { number: 70, name: "المعارج", revelation: "مكية", ayahs: 44 },
+  { number: 71, name: "نوح", revelation: "مكية", ayahs: 28 },
+  { number: 72, name: "الجن", revelation: "مكية", ayahs: 28 },
+  { number: 73, name: "المزمل", revelation: "مكية", ayahs: 20 },
+  { number: 74, name: "المدثر", revelation: "مكية", ayahs: 56 },
+  { number: 75, name: "القيامة", revelation: "مكية", ayahs: 40 },
+  { number: 76, name: "الإنسان", revelation: "مدنية", ayahs: 31 },
+  { number: 77, name: "المرسلات", revelation: "مكية", ayahs: 50 },
+  { number: 78, name: "النبإ", revelation: "مكية", ayahs: 40 },
+  { number: 79, name: "النازعات", revelation: "مكية", ayahs: 46 },
+  { number: 80, name: "عبس", revelation: "مكية", ayahs: 42 },
+  { number: 81, name: "التكوير", revelation: "مكية", ayahs: 29 },
+  { number: 82, name: "الإنفطار", revelation: "مكية", ayahs: 19 },
+  { number: 83, name: "المطففين", revelation: "مكية", ayahs: 36 },
+  { number: 84, name: "الإنشقاق", revelation: "مكية", ayahs: 25 },
+  { number: 85, name: "البروج", revelation: "مكية", ayahs: 22 },
+  { number: 86, name: "الطارق", revelation: "مكية", ayahs: 17 },
+  { number: 87, name: "الأعلى", revelation: "مكية", ayahs: 19 },
+  { number: 88, name: "الغاشية", revelation: "مكية", ayahs: 26 },
+  { number: 89, name: "الفجر", revelation: "مكية", ayahs: 30 },
+  { number: 90, name: "البلد", revelation: "مكية", ayahs: 20 },
+  { number: 91, name: "الشمس", revelation: "مكية", ayahs: 15 },
+  { number: 92, name: "الليل", revelation: "مكية", ayahs: 21 },
+  { number: 93, name: "الضحى", revelation: "مكية", ayahs: 11 },
+  { number: 94, name: "الشرح", revelation: "مكية", ayahs: 8 },
+  { number: 95, name: "التين", revelation: "مكية", ayahs: 8 },
+  { number: 96, name: "العلق", revelation: "مكية", ayahs: 19 },
+  { number: 97, name: "القدر", revelation: "مكية", ayahs: 5 },
+  { number: 98, name: "البينة", revelation: "مدنية", ayahs: 8 },
+  { number: 99, name: "الزلزلة", revelation: "مدنية", ayahs: 8 },
+  { number: 100, name: "العاديات", revelation: "مكية", ayahs: 11 },
+  { number: 101, name: "القارعة", revelation: "مكية", ayahs: 11 },
+  { number: 102, name: "التكاثر", revelation: "مكية", ayahs: 8 },
+  { number: 103, name: "العصر", revelation: "مكية", ayahs: 3 },
+  { number: 104, name: "الهمزة", revelation: "مكية", ayahs: 9 },
+  { number: 105, name: "الفيل", revelation: "مكية", ayahs: 5 },
+  { number: 106, name: "قريش", revelation: "مكية", ayahs: 4 },
+  { number: 107, name: "الماعون", revelation: "مكية", ayahs: 7 },
+  { number: 108, name: "الكوثر", revelation: "مكية", ayahs: 3 },
+  { number: 109, name: "الكافرون", revelation: "مكية", ayahs: 6 },
+  { number: 110, name: "النصر", revelation: "مدنية", ayahs: 3 },
+  { number: 111, name: "المسد", revelation: "مكية", ayahs: 5 },
+  { number: 112, name: "الإخلاص", revelation: "مكية", ayahs: 4 },
+  { number: 113, name: "الفلق", revelation: "مكية", ayahs: 5 },
+  { number: 114, name: "الناس", revelation: "مكية", ayahs: 6 },
+];
+
+export const QuranJuz = [
+  {
+    number: 1,
+    surahs: ["الفاتحة", "البقرة"],
+  },
+  {
+    number: 2,
+    surahs: ["البقرة"],
+  },
+  {
+    number: 3,
+    surahs: ["البقرة", "آل عمران"],
+  },
+  {
+    number: 4,
+    surahs: ["آل عمران", "النساء"],
+  },
+  {
+    number: 5,
+    surahs: ["النساء"],
+  },
+  {
+    number: 6,
+    surahs: ["المائدة", "الأنعام"],
+  },
+  {
+    number: 7,
+    surahs: ["الأنعام", "الأعراف"],
+  },
+  {
+    number: 8,
+    surahs: ["الأعراف", "الأنفال"],
+  },
+  {
+    number: 9,
+    surahs: ["الأنفال", "التوبة"],
+  },
+  {
+    number: 10,
+    surahs: ["التوبة", "يونس", "هود"],
+  },
+  {
+    number: 11,
+    surahs: ["هود", "يوسف"],
+  },
+  {
+    number: 12,
+    surahs: ["يوسف", "الرعد", "إبراهيم"],
+  },
+  {
+    number: 13,
+    surahs: ["الحجر", "النحل"],
+  },
+  {
+    number: 14,
+    surahs: ["الإسراء", "الكهف", "مريم", "طه", "الأنبياء"],
+  },
+  {
+    number: 15,
+    surahs: ["الأنبياء", "الحج"],
+  },
+  {
+    number: 16,
+    surahs: ["الفرقان", "الشعراء", "النمل"],
+  },
+  {
+    number: 17,
+    surahs: ["القصص", "العنكبوت", "الروم"],
+  },
+  {
+    number: 18,
+    surahs: ["لقمان", "السجدة", "الأحزاب"],
+  },
+  {
+    number: 19,
+    surahs: ["سبأ", "فاطر", "يس"],
+  },
+  {
+    number: 20,
+    surahs: ["الصافات", "ص", "الزمر"],
+  },
+  {
+    number: 21,
+    surahs: ["غافر", "فصلت"],
+  },
+  {
+    number: 22,
+    surahs: ["الشورى", "الزخرف", "الدخان", "الجاثية"],
+  },
+  {
+    number: 23,
+    surahs: ["الأحقاف", "الذاريات"],
+  },
+  {
+    number: 24,
+    surahs: ["الذاريات", "الحديد"],
+  },
+  {
+    number: 25,
+    surahs: ["المجادلة", "التحريم"],
+  },
+  {
+    number: 26,
+    surahs: ["الملك", "المرسلات"],
+  },
+  {
+    number: 27,
+    surahs: ["النبأ", "الناس"],
+  },
+  {
+    number: 28,
+    surahs: ["المجادلة", "التحريم"],
+  },
+  {
+    number: 29,
+    surahs: ["الملك", "المرسلات"],
+  },
+  {
+    number: 30,
+    surahs: [
+      "النبأ",
+      "النازعات",
+      "عبس",
+      "التكوير",
+      "الإنفطار",
+      "المطففين",
+      "الإنشقاق",
+      "البروج",
+      "الطارق",
+      "الأعلى",
+      "الغاشية",
+      "الفجر",
+      "البلد",
+      "الشمس",
+      "الليل",
+      "الضحى",
+      "الشرح",
+      "التين",
+      "العلق",
+      "القدر",
+      "البينة",
+      "الزلزلة",
+      "العاديات",
+      "القارعة",
+      "التكاثر",
+      "العصر",
+      "الهمزة",
+      "الفيل",
+      "قريش",
+      "الماعون",
+      "الكوثر",
+      "الكافرون",
+      "النصر",
+      "المسد",
+      "الإخلاص",
+      "الفلق",
+      "الناس",
+    ],
+  },
+];
+
+export const ayahOptions = [
+  {
+    label: "حفظ",
+    icon: React.createElement(CiBookmark),
+  },
+  {
+    label: "نسخ",
+    icon: React.createElement(MdOutlineContentCopy),
+  },
+  {
+    label: "تفسير",
+    icon: React.createElement(FiBookOpen),
+  },
+  {
+    label: "استماع",
+    icon: React.createElement(SlControlPlay),
+  },
+];
+
+//interfaces
+export interface HadithProps {
+  number: number;
+  arab: string;
+  id: string;
+}
+export interface AyahProps {
+  ayahs: {
+    number: number;
+    audio: string;
+    audioSecondary: string[];
+    text: string;
+    numberInSurah: number;
+    juz: number;
+    manzil: number;
+    page: number;
+    ruku: number;
+    hizbQuarter: number;
+    sajda: boolean;
+  }[];
+}

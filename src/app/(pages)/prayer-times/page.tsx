@@ -27,9 +27,9 @@ const PrayerTimes = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [geoError, setGeoError] = useState<string | null>(null);
 
-  // 🕒 update current time every second
+  // 🕒 update current time every minutes
   useEffect(() => {
-    const timer = setInterval(() => setCurrentTime(new Date()), 1000);
+    const timer = setInterval(() => setCurrentTime(new Date()), 1000 * 60);
     return () => clearInterval(timer);
   }, []);
 
@@ -143,32 +143,32 @@ const PrayerTimes = () => {
 
         {/* 🕌 Prayer Times / Loading Skeleton */}
         <div className="flex items-center flex-col gap-5 mt-10">
-          {isLoading
-            ? Array.from({ length: 5 }).map((_, i) => (
-                <PrayerTimesLoadingSkeleton key={i} />
-              ))
-            : Object.entries(prayerTimes ?? {}).map(([key, value]) => {
-                const isNext = key === nextPrayerKey;
-                return (
-                  <div
-                    key={key}
-                    className={`flex justify-between w-full text-primary font-bold text-2xl sm:text-3xl p-4 rounded-lg max-w-[1200px] mx-auto bg-muted border-2 transition cursor-pointer ${
-                      isNext
-                        ? "border-primary shadow-lg"
-                        : "border-foreground hover:border-primary hover:scale-105"
-                    }`}
-                  >
-                    <p>{convertTo12H(value)}</p>
-                    <p>
-                      {
-                        PrayerTimesInArabic[
-                          key as keyof typeof PrayerTimesInArabic
-                        ]
-                      }
-                    </p>
-                  </div>
-                );
-              })}
+          {isLoading ? (
+            <PrayerTimesLoadingSkeleton />
+          ) : (
+            Object.entries(prayerTimes ?? {}).map(([key, value]) => {
+              const isNext = key === nextPrayerKey;
+              return (
+                <div
+                  key={key}
+                  className={`flex justify-between w-full text-primary font-bold text-2xl sm:text-3xl p-4 rounded-lg max-w-[1200px] mx-auto bg-muted border-2 transition cursor-pointer ${
+                    isNext
+                      ? "border-primary shadow-lg"
+                      : "border-foreground hover:border-primary hover:scale-105"
+                  }`}
+                >
+                  <p>{convertTo12H(value)}</p>
+                  <p>
+                    {
+                      PrayerTimesInArabic[
+                        key as keyof typeof PrayerTimesInArabic
+                      ]
+                    }
+                  </p>
+                </div>
+              );
+            })
+          )}
         </div>
       </div>
     </div>

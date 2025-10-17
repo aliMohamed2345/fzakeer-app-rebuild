@@ -142,7 +142,7 @@ const Hadith = () => {
             ابحث <IoIosSearch size={25} />
           </button>
 
-          <div className="bg-muted border-primary border p-2 rounded-lg w-full relative">
+          <div className="bg-background border-primary border p-2 rounded-lg w-full relative">
             <input
               value={hadithNumber ?? ""}
               placeholder="ابحث برقم الحديث..."
@@ -203,7 +203,7 @@ const Hadith = () => {
             onClick={nextPage}
             className="bg-muted border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32 cursor-pointer"
           >
-            &lt; التالي
+            التالي
           </button>
 
           <div className="text-primary font-bold text-sm sm:text-xl bg-primary/20 p-3 rounded-md  hidden sm:block">
@@ -217,7 +217,7 @@ const Hadith = () => {
             onClick={prevPage}
             className="bg-muted  border border-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-muted disabled:hover:text-primary hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32 cursor-pointer"
           >
-            السابق &gt;
+            السابق
           </button>
         </div>
       </div>
