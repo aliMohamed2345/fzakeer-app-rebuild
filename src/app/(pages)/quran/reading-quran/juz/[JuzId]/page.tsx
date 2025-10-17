@@ -58,8 +58,8 @@ const JuzId = () => {
     setError(null);
 
     try {
-      const recitationUrl = `${process.env.NEXT_PUBLIC_QURAN_AND_TAFSIR_API}/juz/${JuzId}/ar.alafasy`;
-      const tafsirUrl = `${process.env.NEXT_PUBLIC_QURAN_AND_TAFSIR_API}/juz/${JuzId}/ar.muyassar`;
+      const recitationUrl = `/api/quran?path=juz/${JuzId}/ar.alafasy`;
+      const tafsirUrl = `/api/quran?path=juz/${JuzId}/ar.muyassar`;
 
       const [recRes, tafRes] = await Promise.all([
         fetch(recitationUrl),

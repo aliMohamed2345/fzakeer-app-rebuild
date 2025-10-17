@@ -65,10 +65,10 @@ const SurahId = () => {
       try {
         const [surahResponse, tafsirResponse] = await Promise.all([
           fetch(
-            `${process.env.NEXT_PUBLIC_QURAN_AND_TAFSIR_API}/surah/${surahId}/ar.alafasy`
+            `/api/quran?path=surah/${surahId}/ar.alafasy`
           ),
           fetch(
-            `${process.env.NEXT_PUBLIC_QURAN_AND_TAFSIR_API}/surah/${surahId}/ar.muyassar`
+            `/api/quran?path=surah/${surahId}/ar.muyassar`
           ),
         ]);
         const surahData = await surahResponse.json();
@@ -91,10 +91,10 @@ const SurahId = () => {
       ) : (
         <div className="pt-24">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl text-primary">{surahData.name}</h1>
+            <h1 className="text-4xl sm:text-6xl text-primary">{surahData?.name}</h1>
             <h6 className="sm:text-2xl text-lg text-muted-foreground mt-4">
-              {surahData.englishName} - {surahData.englishNameTranslation} -{" "}
-              {surahData.revelationType === "Meccan" ? "مكيه" : "مدنيه"}
+              {surahData?.englishName} - {surahData?.englishNameTranslation} -{" "}
+              {surahData?.revelationType === "Meccan" ? "مكيه" : "مدنيه"}
             </h6>
           </div>
 
@@ -104,7 +104,7 @@ const SurahId = () => {
             </h4>
 
             <div className="h-[600px] overflow-y-auto flex flex-col gap-2 sm:gap-6 px-4 sm:px-8 scrollbar-thin scrollbar-thumb-primary/40 scrollbar-track-transparent">
-              {surahData.ayahs.map((ayah, i: number) => (
+              {surahData?.ayahs?.map((ayah, i: number) => (
                 <Ayah
                   key={i}
                   ayah={ayah}
