@@ -52,7 +52,6 @@ const JuzId = () => {
   const [tafsirData, setTafsirData] = useState<AyahProps | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isAyahCopied, setIsAyahCopied] = useState<boolean>(false);
-  console.log(groupedSurahs);
   const fetchJuz = async () => {
     setLoading(true);
     setError(null);

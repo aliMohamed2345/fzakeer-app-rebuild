@@ -18,7 +18,6 @@ export interface savedAyahProps {
 const SavedAyah = () => {
   const [savedAyahs, setSavedAyahs] = useState<savedAyahProps[] | []>([]);
   const [isLoading, setIsLoading] = useState(true);
-  console.log(isLoading);
   useEffect(() => {
     const fetchSavedAyahs = () => {
       const LocalStorageData = JSON.parse(
@@ -34,7 +33,7 @@ const SavedAyah = () => {
   return (
     <div className="container px-2 mx-auto pt-20">
       <div className="text-center font-bold">
-        <h1 className="sm:text-5xl text-2xl text-primary font-bold">
+        <h1 className="sm:text-5xl text-2xl text-primary ">
           الايات المحفوظه
         </h1>
         <p className="sm:text-2xl text-lg mt-3 text-muted-foreground ">
