@@ -34,6 +34,7 @@ interface AyahInterface {
   };
   surahName: string;
   revelationType: "مكيه" | "مدنيه";
+  surahNumber: number;
 }
 
 const Ayah = ({
@@ -42,6 +43,7 @@ const Ayah = ({
   tafsirAyahs,
   surahName,
   revelationType,
+  surahNumber,
 }: AyahInterface) => {
   const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(
     null
@@ -92,8 +94,9 @@ const Ayah = ({
         page: ayah.page,
         hizbQuarter: ayah.hizbQuarter,
         sajda: ayah.sajda ?? false,
-        surahName: surahName,
         revelation: revelationType,
+        surahName,
+        surahNumber,
       };
       updated = [...stored, newAyah];
     }

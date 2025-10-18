@@ -1,12 +1,11 @@
 "use client";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import Ayah from "@/app/Components/Quran/Ayah";
 import { useState, useEffect } from "react";
 import Alert from "@/app/Components/Home/Alert";
 import { AyahProps } from "@/app/Data/Data";
 import Link from "next/link";
 import SurahLoading from "@/app/Components/Quran/SurahLoading";
-
 interface SurahDataProps extends AyahProps {
   name: string;
   englishName: string;
@@ -16,6 +15,7 @@ interface SurahDataProps extends AyahProps {
 }
 
 const SurahId = () => {
+  const pathname = usePathname();
   const { surahId } = useParams();
   const [isAyahCopied, setIsAyahCopied] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
@@ -59,17 +59,27 @@ const SurahId = () => {
       },
     ],
   });
+  //for scrolling to the saved ayah directly
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        }, 300);
+      }
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const fetchSurah = async () => {
       try {
         const [surahResponse, tafsirResponse] = await Promise.all([
-          fetch(
-            `/api/quran?path=surah/${surahId}/ar.alafasy`
-          ),
-          fetch(
-            `/api/quran?path=surah/${surahId}/ar.muyassar`
-          ),
+          fetch(`/api/quran?path=surah/${surahId}/ar.alafasy`),
+          fetch(`/api/quran?path=surah/${surahId}/ar.muyassar`),
         ]);
         const surahData = await surahResponse.json();
         const tafsirData = await tafsirResponse.json();
@@ -91,7 +101,9 @@ const SurahId = () => {
       ) : (
         <div className="pt-24">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl text-primary">{surahData?.name}</h1>
+            <h1 className="text-4xl sm:text-6xl text-primary">
+              {surahData?.name}
+            </h1>
             <h6 className="sm:text-2xl text-lg text-muted-foreground mt-4">
               {surahData?.englishName} - {surahData?.englishNameTranslation} -{" "}
               {surahData?.revelationType === "Meccan" ? "مكيه" : "مدنيه"}
@@ -106,6 +118,7 @@ const SurahId = () => {
             <div className="h-[600px] overflow-y-auto flex flex-col gap-2 sm:gap-6 px-4 sm:px-8 scrollbar-thin scrollbar-thumb-primary/40 scrollbar-track-transparent">
               {surahData?.ayahs?.map((ayah, i: number) => (
                 <Ayah
+                  surahNumber={+surahId!}
                   key={i}
                   ayah={ayah}
                   setIsAyahCopied={setIsAyahCopied}

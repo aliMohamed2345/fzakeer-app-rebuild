@@ -1,7 +1,11 @@
-import React from "react";
 
 const SearchQuran = () => {
-  return <div>SearchQuran</div>;
+ 
+  return (
+    <div>
+      <h1>SearchQuran</h1>
+    </div>
+  );
 };
 
 export default SearchQuran;

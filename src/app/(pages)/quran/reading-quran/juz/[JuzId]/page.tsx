@@ -153,13 +153,14 @@ const JuzId = () => {
                     {surah.surahName} ( {surah.surahNumber} )
                     <div className="flex gap-2 items-center justify-between text-sm sm:text-3xl mt-6 text-muted-foreground">
                       <p>الجزء: {surah.ayahs[0].juz}</p>
-                      <p>الحزب: {calculateHizb( surah.ayahs[0].hizbQuarter)}</p>
+                      <p>الحزب: {calculateHizb(surah.ayahs[0].hizbQuarter)}</p>
                     </div>
                   </h2>
 
                   <div className="flex flex-col gap-4 sm:gap-6">
                     {surah.ayahs.map((ayah, i) => (
                       <Ayah
+                        surahNumber={+JuzId!}
                         key={`${ayah.number}-${i}`}
                         ayah={ayah}
                         setIsAyahCopied={setIsAyahCopied}
