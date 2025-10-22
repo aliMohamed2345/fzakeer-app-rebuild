@@ -57,7 +57,7 @@ const DropDownMenu = ({
 
       {/* Dropdown content */}
       <div
-        className={`absolute right-0 mt-2 w-full bg-background border border-secondary rounded-lg shadow-md overflow-hidden transition-all duration-300 z-20 ${
+        className={`absolute right-0 mt-2 w-full max-h-[200px] overflow-y-auto bg-background border border-secondary rounded-lg shadow-md overflow-hidden transition-all duration-300 z-20 ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 pointer-events-none"
