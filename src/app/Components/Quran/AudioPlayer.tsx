@@ -216,7 +216,7 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
       {/* Close Button */}
       <button
         onClick={handleClose}
-        className="fixed bottom-[110px] sm:bottom-[140px] right-4 z-50 p-1 rounded-full bg-background border border-primary/30 hover:bg-primary/10 transition cursor-pointer shadow-md"
+        className="fixed bottom-[110px] sm:bottom-[140px] right-4 z-50 p-1 rounded-full bg-background border border-primary/30 hover:bg-primary/10 active:bg-primary/10 transition cursor-pointer shadow-md"
         aria-label="إغلاق المشغل"
       >
         <IoClose size={20} />
@@ -236,7 +236,7 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
         <div className="flex items-center justify-center gap-1 sm:gap-4">
           <button
             onClick={() => skipBackward(10)}
-            className="hover:bg-muted transition rounded-full p-2 cursor-pointer"
+            className="hover:bg-muted active:bg-muted transition rounded-full p-2 cursor-pointer"
           >
             <TbPlayerTrackPrevFilled size={22} />
           </button>
@@ -244,14 +244,14 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
           <button
             disabled={getSurahIdFromUrl(currentAudioLink) === "001"}
             onClick={() => handleNavigateSurah(false)}
-            className="hover:bg-muted transition rounded-full p-2 disabled:opacity-30 cursor-pointer"
+            className="hover:bg-muted active:bg-muted transition rounded-full p-2 disabled:opacity-30 cursor-pointer"
           >
             <TbPlayerSkipBackFilled size={22} />
           </button>
 
           <button
             onClick={handlePlayPause}
-            className="p-3 sm:p-4 rounded-full bg-primary text-background hover:scale-105 transition cursor-pointer"
+            className="p-3 sm:p-4 rounded-full bg-primary text-background hover:scale-105 active:scale-105 transition cursor-pointer"
           >
             {isLoading ? (
               <AiOutlineLoading3Quarters className="animate-spin" size={15} />
@@ -265,14 +265,14 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
           <button
             disabled={getSurahIdFromUrl(currentAudioLink) === "114"}
             onClick={() => handleNavigateSurah(true)}
-            className="hover:bg-muted transition rounded-full p-2 disabled:opacity-30"
+            className="hover:bg-muted active:bg-muted transition rounded-full p-2 disabled:opacity-30 cursor-pointer"
           >
             <TbPlayerSkipForwardFilled size={22} />
           </button>
 
           <button
             onClick={() => skipForward(10)}
-            className="hover:bg-muted transition rounded-full p-2 cursor-pointer"
+            className="hover:bg-muted active:bg-muted transition rounded-full p-2 cursor-pointer"
           >
             <TbPlayerTrackNextFilled size={22} />
           </button>
@@ -281,7 +281,7 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
           <div className="flex sm:hidden items-center gap-2">
             <button
               onClick={handleMuteToggle}
-              className="text-sm hover:bg-muted rounded-full transition cursor-pointer"
+              className="text-sm hover:bg-muted active:bg-muted rounded-full transition cursor-pointer"
             >
               {renderVolumeIcon()}
             </button>
@@ -303,7 +303,7 @@ const AudioPlayer = ({ audioLink, setIsPlayerOpen }: AudioPlayerProps) => {
           <div className="items-center gap-2 hidden sm:flex">
             <button
               onClick={handleMuteToggle}
-              className="text-xl hover:bg-muted p-2 rounded-full transition cursor-pointer"
+              className="text-xl hover:bg-muted active:bg-muted p-2 rounded-full transition cursor-pointer"
             >
               {renderVolumeIcon()}
             </button>

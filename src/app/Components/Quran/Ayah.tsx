@@ -155,14 +155,14 @@ const Ayah = ({
   return (
     <div
       id={`ayah-${ayah.numberInSurah}`}
-      className="group relative rounded-3xl border border-primary/20 bg-gradient-to-br from-background/80 to-muted/50 p-3 sm:p-6 shadow-md hover:shadow-xl transition-all duration-500 backdrop-blur-sm"
+      className="group relative rounded-3xl border border-primary/20 bg-gradient-to-br from-background/80 to-muted/50 p-3 sm:p-6 shadow-md hover:shadow-xl active:shadow-xl transition-all duration-500 backdrop-blur-sm"
     >
       {/* Ayah Text */}
       <div className="flex items-center justify-center sm:justify-end gap-3 text-end leading-relaxed flex-wrap sm:flex-nowrap flex-col-reverse">
-        <p className="text-base sm:text-2xl md:text-3xl font-cairo text-foreground/90 group-hover:text-primary transition-colors duration-300">
+        <p className="text-base sm:text-2xl md:text-3xl font-cairo text-foreground/90 group-hover:text-primary group-active:text-primary transition-colors duration-300">
           {ayah.text}
         </p>
-        <span className="rounded-full bg-primary text-xs sm:text-xl text-primary-foreground font-semibold sm:w-10 sm:h-10 w-8 h-8 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300">
+        <span className="rounded-full bg-primary text-xs sm:text-xl text-primary-foreground font-semibold sm:w-10 sm:h-10 w-8 h-8 flex items-center justify-center shadow-inner group-hover:scale-110 group-active:scale-110 transition-transform duration-300">
           {ayah.numberInSurah}
         </span>
       </div>
@@ -178,9 +178,9 @@ const Ayah = ({
             <div key={idx} className="relative group/btn">
               <button
                 onClick={() => handleOptionsSelection(btn, ayah)}
-                className="flex items-center justify-center gap-1.5 sm:gap-2 border border-primary/30 bg-gradient-to-br from-background/60 to-muted/40 rounded-xl sm:rounded-2xl px-2 py-1 sm:px-5 sm:py-2 text-foreground/90 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 cursor-pointer w-[70px] sm:w-auto"
+                className="flex items-center justify-center gap-1.5 sm:gap-2 border border-primary/30 bg-gradient-to-br from-background/60 to-muted/40 rounded-xl sm:rounded-2xl px-2 py-1 sm:px-5 sm:py-2 text-foreground/90 shadow-sm hover:shadow-md hover:border-primary/50 active:shadow-md active:border-primary/50 transition-all duration-300 cursor-pointer w-[70px] sm:w-auto"
               >
-                <span className="text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300 text-primary">
+                <span className="text-lg sm:text-xl group-hover:scale-110 group-active:scale-110 transition-transform duration-300 text-primary">
                   {btn.label === "استماع" ? (
                     isPlaying ? (
                       <SlControlPause />
@@ -197,13 +197,13 @@ const Ayah = ({
                     btn.icon
                   )}
                 </span>
-                <span className="hidden sm:inline group-hover:text-primary transition-colors duration-300 text-sm sm:text-lg">
+                <span className="hidden sm:inline group-hover:text-primary group-active:text-primary transition-colors duration-300 text-sm sm:text-lg">
                   {btn.label}
                 </span>
               </button>
 
               {/* Tooltip */}
-              <div className="absolute bottom-full right-1/2 translate-x-1/2 mb-2 block sm:hidden opacity-0 translate-y-1 group-hover/btn:opacity-100 group-hover/btn:translate-y-0 transition-all duration-300">
+              <div className="absolute bottom-full right-1/2 translate-x-1/2 mb-2 block sm:hidden opacity-0 translate-y-1 group-hover/btn:opacity-100 group-hover/btn:translate-y-0 group-active/btn:opacity-100 group-active/btn:translate-y-0 transition-all duration-300">
                 <div className="bg-primary text-primary-foreground text-xs px-3 py-1 rounded-md shadow-md whitespace-nowrap">
                   {btn.label}
                 </div>

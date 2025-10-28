@@ -154,7 +154,7 @@ const PrayerTimes = () => {
                   className={`flex justify-between w-full text-primary font-bold text-2xl sm:text-3xl p-4 rounded-lg max-w-[1200px] mx-auto bg-muted border-2 transition cursor-pointer ${
                     isNext
                       ? "border-primary shadow-lg"
-                      : "border-foreground hover:border-primary hover:scale-105"
+                      : "border-foreground hover:border-primary hover:scale-105 active:border-primary active:scale-105"
                   }`}
                 >
                   <p>{convertTo12H(value)}</p>

@@ -3,7 +3,6 @@ import SearchQuranAyah from "@/app/Components/Quran/SearchQuranAyah";
 import { useDebounce } from "@/app/hooks/useDebounce";
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import SearchQuranLoading from "@/app/Components/Quran/SearchQuranLoading";
 import NotFoundQuranAyah from "@/app/Components/Quran/NotFoundQuranAyah";
 

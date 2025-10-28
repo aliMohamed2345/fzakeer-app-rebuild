@@ -25,7 +25,7 @@ const NoSavedAyahs = () => {
       {/* Button */}
       <Link
         href="/quran/reading-quran"
-        className="inline-flex items-center gap-2 border border-primary text-primary bg-muted hover:bg-primary hover:text-background transition-all duration-300 px-6 py-3 rounded-full shadow-md font-medium text-lg"
+        className="inline-flex items-center gap-2 border border-primary text-primary bg-muted hover:bg-primary hover:text-background active:bg-primary active:text-background transition-all duration-300 px-6 py-3 rounded-full shadow-md font-medium text-lg"
       >
         <span>تصفح القرآن الكريم</span>
       </Link>

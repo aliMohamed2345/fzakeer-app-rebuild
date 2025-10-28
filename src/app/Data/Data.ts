@@ -1099,6 +1099,30 @@ export const HadithBooks = [
     available: 3625,
   },
 ];
+export const hadithSamples = [
+  {
+    id: 1,
+    arabic:
+      "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+    reference: "صحيح البخاري",
+  },
+  {
+    id: 2,
+    arabic:
+      "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    reference: "صحيح البخاري",
+  },
+  {
+    id: 3,
+    arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+    reference: "صحيح البخاري",
+  },
+  {
+    id: 4,
+    arabic: "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+    reference: "صحيح البخاري",
+  },
+];
 
 export const MonthsInArabic = {
   January: "يناير",
@@ -1507,7 +1531,6 @@ export const reciters = [
     id: 1,
     name: "إبراهيم الأخضر",
     letter: "إ",
-    date: "2025-09-06T00:39:03.000000Z",
     moshaf: [
       {
         id: 1,
@@ -1524,7 +1547,6 @@ export const reciters = [
     id: 10,
     name: "أكرم العلاقمي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10,
@@ -1541,7 +1563,6 @@ export const reciters = [
     id: 100,
     name: "ماجد العنزي",
     letter: "م",
-    date: "2025-09-12T09:53:49.000000Z",
     moshaf: [
       {
         id: 100,
@@ -1558,7 +1579,6 @@ export const reciters = [
     id: 102,
     name: "ماهر المعيقلي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 133,
@@ -1593,7 +1613,6 @@ export const reciters = [
     id: 104,
     name: "محمد الأيراوي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 104,
@@ -1610,7 +1629,6 @@ export const reciters = [
     id: 105,
     name: "محمد البراك",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 105,
@@ -1627,7 +1645,6 @@ export const reciters = [
     id: 106,
     name: "محمد الطبلاوي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 106,
@@ -1644,7 +1661,6 @@ export const reciters = [
     id: 107,
     name: "محمد اللحيدان",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 107,
@@ -1661,7 +1677,6 @@ export const reciters = [
     id: 108,
     name: "محمد المحيسني",
     letter: "م",
-    date: "2025-09-12T09:42:11.000000Z",
     moshaf: [
       {
         id: 108,
@@ -1678,7 +1693,6 @@ export const reciters = [
     id: 109,
     name: "محمد أيوب",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 320,
@@ -1704,7 +1718,6 @@ export const reciters = [
     id: 11,
     name: "الحسيني العزازي",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 11,
@@ -1721,7 +1734,6 @@ export const reciters = [
     id: 110,
     name: "محمد صالح عالم شاه",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 110,
@@ -1738,7 +1750,6 @@ export const reciters = [
     id: 111,
     name: "محمد جبريل",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 111,
@@ -1755,7 +1766,6 @@ export const reciters = [
     id: 112,
     name: "محمد صديق المنشاوي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 114,
@@ -1790,7 +1800,6 @@ export const reciters = [
     id: 115,
     name: "محمد عبدالكريم",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 210,
@@ -1817,7 +1826,6 @@ export const reciters = [
     id: 116,
     name: "محمد عبدالحكيم سعيد العبدالله",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 117,
@@ -1844,7 +1852,6 @@ export const reciters = [
     id: 118,
     name: "محمود خليل الحصري",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 270,
@@ -1898,7 +1905,6 @@ export const reciters = [
     id: 12,
     name: "إدريس أبكر",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 12,
@@ -1915,7 +1921,6 @@ export const reciters = [
     id: 121,
     name: "محمود علي البنا",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 122,
@@ -1941,7 +1946,6 @@ export const reciters = [
     id: 123,
     name: "مشاري العفاسي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 124,
@@ -1967,7 +1971,6 @@ export const reciters = [
     id: 125,
     name: "مصطفى إسماعيل",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 288,
@@ -1993,7 +1996,6 @@ export const reciters = [
     id: 126,
     name: "مصطفى اللاهوني",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 126,
@@ -2010,7 +2012,6 @@ export const reciters = [
     id: 127,
     name: "مصطفى رعد العزاوي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 127,
@@ -2027,7 +2028,6 @@ export const reciters = [
     id: 128,
     name: "معمر الأندونيسي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 128,
@@ -2043,7 +2043,6 @@ export const reciters = [
     id: 129,
     name: "مفتاح السلطني",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 196,
@@ -2101,7 +2100,6 @@ export const reciters = [
     id: 13,
     name: "الزين محمد أحمد",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 13,
@@ -2118,7 +2116,6 @@ export const reciters = [
     id: 134,
     name: "محمد سايد",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 134,
@@ -2135,7 +2132,6 @@ export const reciters = [
     id: 135,
     name: "عبدالرحمن السويّد",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 135,
@@ -2153,7 +2149,6 @@ export const reciters = [
     id: 136,
     name: "عبدالإله بن عون",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 136,
@@ -2171,7 +2166,6 @@ export const reciters = [
     id: 137,
     name: "أحمد طالب بن حميد",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 137,
@@ -2189,7 +2183,6 @@ export const reciters = [
     id: 138,
     name: "نورين محمد صديق",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 138,
@@ -2207,7 +2200,6 @@ export const reciters = [
     id: 139,
     name: "ماجد الزامل",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 139,
@@ -2224,7 +2216,6 @@ export const reciters = [
     id: 14,
     name: "القارئ ياسين",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 14,
@@ -2241,7 +2232,6 @@ export const reciters = [
     id: 149,
     name: "ماهر شخاشيرو",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 149,
@@ -2258,7 +2248,6 @@ export const reciters = [
     id: 15,
     name: "العشري عمران",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 15,
@@ -2275,7 +2264,6 @@ export const reciters = [
     id: 150,
     name: "محمد المنشد",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 150,
@@ -2292,7 +2280,6 @@ export const reciters = [
     id: 151,
     name: "محمود الشيمي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 151,
@@ -2309,7 +2296,6 @@ export const reciters = [
     id: 152,
     name: "ياسر سلامة",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 152,
@@ -2326,7 +2312,6 @@ export const reciters = [
     id: 153,
     name: "أخيل عبدالحي روا",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 153,
@@ -2342,7 +2327,6 @@ export const reciters = [
     id: 154,
     name: "أستاذ زامري",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 154,
@@ -2358,7 +2342,6 @@ export const reciters = [
     id: 159,
     name: "خالد المهنا",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 159,
@@ -2375,7 +2358,6 @@ export const reciters = [
     id: 16,
     name: "العيون الكوشي",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 16,
@@ -2392,7 +2374,6 @@ export const reciters = [
     id: 160,
     name: "عادل الكلباني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 160,
@@ -2409,7 +2390,6 @@ export const reciters = [
     id: 161,
     name: "موسى بلال",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 161,
@@ -2426,7 +2406,6 @@ export const reciters = [
     id: 162,
     name: "حسين آل الشيخ",
     letter: "ح",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 162,
@@ -2443,7 +2422,6 @@ export const reciters = [
     id: 163,
     name: "حاتم فريد الواعر",
     letter: "ح",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 163,
@@ -2460,7 +2438,6 @@ export const reciters = [
     id: 164,
     name: "إبراهيم الجرمي",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 164,
@@ -2477,7 +2454,6 @@ export const reciters = [
     id: 165,
     name: "محمود الرفاعي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 165,
@@ -2494,7 +2470,6 @@ export const reciters = [
     id: 166,
     name: "ناصر العبيد",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 166,
@@ -2511,7 +2486,6 @@ export const reciters = [
     id: 167,
     name: "واصل المذن",
     letter: "و",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 167,
@@ -2527,7 +2501,6 @@ export const reciters = [
     id: 17,
     name: "توفيق الصايغ",
     letter: "ت",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 17,
@@ -2544,7 +2517,6 @@ export const reciters = [
     id: 178,
     name: "إبراهيم الدوسري",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 232,
@@ -2572,7 +2544,6 @@ export const reciters = [
     id: 18,
     name: "جمال شاكر عبدالله",
     letter: "ج",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 18,
@@ -2589,7 +2560,6 @@ export const reciters = [
     id: 181,
     name: "جمعان العصيمي",
     letter: "ج",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 181,
@@ -2606,7 +2576,6 @@ export const reciters = [
     id: 183,
     name: "رضية عبدالرحمن",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 183,
@@ -2622,7 +2591,6 @@ export const reciters = [
     id: 184,
     name: "رقية سولونق",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 184,
@@ -2638,7 +2606,6 @@ export const reciters = [
     id: 185,
     name: "سابينة مامات",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 185,
@@ -2654,7 +2621,6 @@ export const reciters = [
     id: 187,
     name: "سيدين عبدالرحمن",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 187,
@@ -2670,7 +2636,6 @@ export const reciters = [
     id: 188,
     name: "عبدالغني عبدالله",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 188,
@@ -2686,7 +2651,6 @@ export const reciters = [
     id: 189,
     name: "عبدالله فهمي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 189,
@@ -2702,7 +2666,6 @@ export const reciters = [
     id: 19,
     name: "حمد الدغريري",
     letter: "ح",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 19,
@@ -2719,7 +2682,6 @@ export const reciters = [
     id: 190,
     name: "محمد الحافظ",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 190,
@@ -2735,7 +2697,6 @@ export const reciters = [
     id: 191,
     name: "محمد حفص علي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 191,
@@ -2751,7 +2712,6 @@ export const reciters = [
     id: 192,
     name: "محمد خير النور",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 192,
@@ -2767,7 +2727,6 @@ export const reciters = [
     id: 193,
     name: "يوسف بن نوح أحمد",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 193,
@@ -2784,7 +2743,6 @@ export const reciters = [
     id: 194,
     name: "جمال الدين الزيلعي",
     letter: "ج",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 194,
@@ -2800,7 +2758,6 @@ export const reciters = [
     id: 197,
     name: "معيض الحارثي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 197,
@@ -2817,7 +2774,6 @@ export const reciters = [
     id: 198,
     name: "محمد رشاد الشريف",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 198,
@@ -2834,7 +2790,6 @@ export const reciters = [
     id: 2,
     name: "إبراهيم الجبرين",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 2,
@@ -2851,7 +2806,6 @@ export const reciters = [
     id: 20,
     name: "خالد الجليل",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 20,
@@ -2868,7 +2822,6 @@ export const reciters = [
     id: 201,
     name: "أحمد الطرابلسي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 201,
@@ -2894,7 +2847,6 @@ export const reciters = [
     id: 202,
     name: "عبدالله الكندري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 202,
@@ -2911,7 +2863,6 @@ export const reciters = [
     id: 203,
     name: "أحمد عامر",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 203,
@@ -2928,7 +2879,6 @@ export const reciters = [
     id: 204,
     name: "إبراهيم السعدان",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 204,
@@ -2945,7 +2895,6 @@ export const reciters = [
     id: 205,
     name: "أحمد الحذيفي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 205,
@@ -2962,7 +2911,6 @@ export const reciters = [
     id: 206,
     name: "محمد عثمان خان",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 206,
@@ -2979,7 +2927,6 @@ export const reciters = [
     id: 207,
     name: "يوسف الدغوش",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 207,
@@ -2996,7 +2943,6 @@ export const reciters = [
     id: 208,
     name: "الدوكالي محمد العالم",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 208,
@@ -3013,7 +2959,6 @@ export const reciters = [
     id: 209,
     name: "وشيار حيدر اربيلي",
     letter: "و",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 209,
@@ -3029,7 +2974,6 @@ export const reciters = [
     id: 21,
     name: "خالد القحطاني",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 21,
@@ -3046,7 +2990,6 @@ export const reciters = [
     id: 211,
     name: "الفاتح محمد الزبير",
     letter: "ا",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 211,
@@ -3063,7 +3006,6 @@ export const reciters = [
     id: 21181,
     name: "محمد برهجي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 340,
@@ -3081,7 +3023,6 @@ export const reciters = [
     id: 21182,
     name: "يوسف العيدروس",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10904,
@@ -3099,7 +3040,6 @@ export const reciters = [
     id: 21183,
     name: "حسن الدغريري",
     letter: "ح",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10905,
@@ -3117,7 +3057,6 @@ export const reciters = [
     id: 21184,
     name: "محمد الفقيه",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10906,
@@ -3135,7 +3074,6 @@ export const reciters = [
     id: 21186,
     name: "جنيد آدم عبدالله",
     letter: "ج",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10908,
@@ -3153,7 +3091,6 @@ export const reciters = [
     id: 21187,
     name: "خالد الزيادي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 10909,
@@ -3171,7 +3108,6 @@ export const reciters = [
     id: 21188,
     name: "الوليد الشمسان",
     letter: "ا",
-    date: "2025-10-07T07:13:14.000000Z",
     moshaf: [
       {
         id: 10910,
@@ -3188,7 +3124,6 @@ export const reciters = [
     id: 21191,
     name: "إبراهيم الشهري",
     letter: "إ",
-    date: "2025-10-10T12:50:32.000000Z",
     moshaf: [
       {
         id: 10911,
@@ -3206,7 +3141,6 @@ export const reciters = [
     id: 212,
     name: "طارق عبدالغني دعوب",
     letter: "ط",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 212,
@@ -3223,7 +3157,6 @@ export const reciters = [
     id: 216,
     name: "عثمان الأنصاري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 216,
@@ -3240,7 +3173,6 @@ export const reciters = [
     id: 217,
     name: "بندر بليله",
     letter: "ب",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 217,
@@ -3257,7 +3189,6 @@ export const reciters = [
     id: 218,
     name: "خالد الشريمي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 218,
@@ -3274,7 +3205,6 @@ export const reciters = [
     id: 219,
     name: "وديع اليمني",
     letter: "و",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 219,
@@ -3291,7 +3221,6 @@ export const reciters = [
     id: 22,
     name: "خالد عبدالكافي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 22,
@@ -3308,7 +3237,6 @@ export const reciters = [
     id: 221,
     name: "رعد محمد الكردي",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 221,
@@ -3325,7 +3253,6 @@ export const reciters = [
     id: 225,
     name: "عبدالرحمن العوسي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 225,
@@ -3342,7 +3269,6 @@ export const reciters = [
     id: 226,
     name: "خالد الغامدي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 226,
@@ -3359,7 +3285,6 @@ export const reciters = [
     id: 227,
     name: "رمضان شكور",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 227,
@@ -3376,7 +3301,6 @@ export const reciters = [
     id: 228,
     name: "عبدالمجيد الأركاني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 228,
@@ -3393,7 +3317,6 @@ export const reciters = [
     id: 229,
     name: "محمد خليل القارئ",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 229,
@@ -3410,7 +3333,6 @@ export const reciters = [
     id: 23,
     name: "خالد الوهيبي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 23,
@@ -3427,7 +3349,6 @@ export const reciters = [
     id: 230,
     name: "رامي الدعيس",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 230,
@@ -3444,7 +3365,6 @@ export const reciters = [
     id: 231,
     name: "هزاع البلوشي",
     letter: "ه",
-    date: "2025-09-14T04:55:55.000000Z",
     moshaf: [
       {
         id: 231,
@@ -3461,7 +3381,6 @@ export const reciters = [
     id: 236,
     name: "عبدالرحمن الماجد",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 236,
@@ -3478,7 +3397,6 @@ export const reciters = [
     id: 237,
     name: "مروان العكري",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 287,
@@ -3495,7 +3413,6 @@ export const reciters = [
     id: 24,
     name: "خليفة الطنيجي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 24,
@@ -3512,7 +3429,6 @@ export const reciters = [
     id: 240,
     name: "سلمان العتيبي",
     letter: "س",
-    date: "2025-09-13T08:05:19.000000Z",
     moshaf: [
       {
         id: 240,
@@ -3529,7 +3445,6 @@ export const reciters = [
     id: 241,
     name: "محمد رفعت",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 241,
@@ -3546,7 +3461,6 @@ export const reciters = [
     id: 243,
     name: "عبدالله الموسى",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 286,
@@ -3572,7 +3486,6 @@ export const reciters = [
     id: 244,
     name: "عبدالله الخلف",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 244,
@@ -3589,7 +3502,6 @@ export const reciters = [
     id: 245,
     name: "منصور السالمي",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 245,
@@ -3606,7 +3518,6 @@ export const reciters = [
     id: 246,
     name: "صلاح مصلي",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 246,
@@ -3623,7 +3534,6 @@ export const reciters = [
     id: 247,
     name: "خالد الشارخ",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 247,
@@ -3640,7 +3550,6 @@ export const reciters = [
     id: 248,
     name: "ناصر العصفور",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 248,
@@ -3657,7 +3566,6 @@ export const reciters = [
     id: 25,
     name: "داود حمزة",
     letter: "د",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 25,
@@ -3674,7 +3582,6 @@ export const reciters = [
     id: 250,
     name: "محمد البخيت",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 250,
@@ -3691,7 +3598,6 @@ export const reciters = [
     id: 251,
     name: "ناصر الماجد",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 251,
@@ -3708,7 +3614,6 @@ export const reciters = [
     id: 252,
     name: "أحمد السويلم",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 252,
@@ -3725,7 +3630,6 @@ export const reciters = [
     id: 253,
     name: "إسلام صبحي",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 253,
@@ -3742,7 +3646,6 @@ export const reciters = [
     id: 254,
     name: "بدر التركي",
     letter: "ب",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 254,
@@ -3759,7 +3662,6 @@ export const reciters = [
     id: 255,
     name: "هيثم الجدعاني",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 255,
@@ -3776,7 +3678,6 @@ export const reciters = [
     id: 256,
     name: "أحمد خليل شاهين",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 256,
@@ -3793,7 +3694,6 @@ export const reciters = [
     id: 257,
     name: "سعد المقرن",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 257,
@@ -3810,7 +3710,6 @@ export const reciters = [
     id: 259,
     name: "أحمد النفيس",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 259,
@@ -3827,7 +3726,6 @@ export const reciters = [
     id: 26,
     name: "رشيد إفراد",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 26,
@@ -3844,7 +3742,6 @@ export const reciters = [
     id: 260,
     name: "عمر الدريويز",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 260,
@@ -3861,7 +3758,6 @@ export const reciters = [
     id: 263,
     name: "عبدالعزيز العسيري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 263,
@@ -3879,7 +3775,6 @@ export const reciters = [
     id: 264,
     name: "يونس اسويلص",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 264,
@@ -3897,7 +3792,6 @@ export const reciters = [
     id: 265,
     name: "أحمد ديبان",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 313,
@@ -4029,7 +3923,6 @@ export const reciters = [
     id: 267,
     name: "عبدالله كامل",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 267,
@@ -4046,7 +3939,6 @@ export const reciters = [
     id: 268,
     name: "بيشه وا قادر الكردي",
     letter: "ب",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 268,
@@ -4063,7 +3955,6 @@ export const reciters = [
     id: 27,
     name: "رشيد بلعالية",
     letter: "ر",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 261,
@@ -4088,7 +3979,6 @@ export const reciters = [
     id: 271,
     name: "نذير المالكي",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 271,
@@ -4106,7 +3996,6 @@ export const reciters = [
     id: 272,
     name: "عكاشة كميني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 296,
@@ -4134,7 +4023,6 @@ export const reciters = [
     id: 273,
     name: "هيثم الدخين",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 273,
@@ -4152,7 +4040,6 @@ export const reciters = [
     id: 274,
     name: "محمد أبو سنينة",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 274,
@@ -4169,7 +4056,6 @@ export const reciters = [
     id: 275,
     name: "محمد الأمين قنيوة",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 275,
@@ -4186,7 +4072,6 @@ export const reciters = [
     id: 277,
     name: "محمود عبدالحكم",
     letter: "م",
-    date: "2025-09-13T08:48:41.000000Z",
     moshaf: [
       {
         id: 277,
@@ -4204,7 +4089,6 @@ export const reciters = [
     id: 278,
     name: "أحمد عيسى المعصراوي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 290,
@@ -4232,7 +4116,6 @@ export const reciters = [
     id: 279,
     name: "إبراهيم كشيدان",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 291,
@@ -4250,7 +4133,6 @@ export const reciters = [
     id: 28,
     name: "زكريا حمامة",
     letter: "ز",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 28,
@@ -4266,7 +4148,6 @@ export const reciters = [
     id: 280,
     name: "هاشم أبو دلال",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 292,
@@ -4284,7 +4165,6 @@ export const reciters = [
     id: 281,
     name: "فؤاد الخامري",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 293,
@@ -4302,7 +4182,6 @@ export const reciters = [
     id: 282,
     name: "سيد أحمد هاشمي",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 294,
@@ -4320,7 +4199,6 @@ export const reciters = [
     id: 283,
     name: "خالد كريم محمدي",
     letter: "خ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 295,
@@ -4338,7 +4216,6 @@ export const reciters = [
     id: 284,
     name: "مال الله عبدالرحمن الجابر",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 297,
@@ -4356,7 +4233,6 @@ export const reciters = [
     id: 285,
     name: "سلمان الصديق",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 298,
@@ -4374,7 +4250,6 @@ export const reciters = [
     id: 286,
     name: "حسن صالح",
     letter: "ح",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 299,
@@ -4391,7 +4266,6 @@ export const reciters = [
     id: 287,
     name: "عبدالرحمن الشحات",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 302,
@@ -4409,7 +4283,6 @@ export const reciters = [
     id: 288,
     name: "عيسى عمر سناكو",
     letter: "ع",
-    date: "2025-10-06T09:47:51.000000Z",
     moshaf: [
       {
         id: 303,
@@ -4427,7 +4300,6 @@ export const reciters = [
     id: 289,
     name: "هارون بقائي",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 304,
@@ -4444,7 +4316,6 @@ export const reciters = [
     id: 29,
     name: "عبدالله بخاري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 281,
@@ -4462,7 +4333,6 @@ export const reciters = [
     id: 290,
     name: "صالح القريشي",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 306,
@@ -4480,7 +4350,6 @@ export const reciters = [
     id: 3,
     name: "إبراهيم العسيري",
     letter: "إ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 3,
@@ -4497,7 +4366,6 @@ export const reciters = [
     id: 30,
     name: "سعد الغامدي",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 30,
@@ -4514,7 +4382,6 @@ export const reciters = [
     id: 300,
     name: "صالح الشمراني",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 300,
@@ -4532,7 +4399,6 @@ export const reciters = [
     id: 301,
     name: "فيصل الهاجري",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 307,
@@ -4549,7 +4415,6 @@ export const reciters = [
     id: 302,
     name: "أنس العمادي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 314,
@@ -4567,7 +4432,6 @@ export const reciters = [
     id: 303,
     name: "عبدالملك العسكر",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 315,
@@ -4584,7 +4448,6 @@ export const reciters = [
     id: 304,
     name: "عبدالكريم الحازمي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 316,
@@ -4602,7 +4465,6 @@ export const reciters = [
     id: 305,
     name: "هشام الهراز",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 317,
@@ -4620,7 +4482,6 @@ export const reciters = [
     id: 306,
     name: "عبدالله المشعل",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 318,
@@ -4637,7 +4498,6 @@ export const reciters = [
     id: 307,
     name: "عبدالعزيز سحيم",
     letter: "ع",
-    date: "2025-09-13T08:50:57.000000Z",
     moshaf: [
       {
         id: 319,
@@ -4653,7 +4513,6 @@ export const reciters = [
     id: 31,
     name: "سعود الشريم",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 31,
@@ -4670,7 +4529,6 @@ export const reciters = [
     id: 32,
     name: "سهل ياسين",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 32,
@@ -4687,7 +4545,6 @@ export const reciters = [
     id: 33,
     name: "زكي داغستاني",
     letter: "ز",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 33,
@@ -4704,7 +4561,6 @@ export const reciters = [
     id: 34,
     name: "سامي الحسن",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 34,
@@ -4721,7 +4577,6 @@ export const reciters = [
     id: 35,
     name: "سامي الدوسري",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 35,
@@ -4738,7 +4593,6 @@ export const reciters = [
     id: 36,
     name: "سيد رمضان",
     letter: "س",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 36,
@@ -4755,7 +4609,6 @@ export const reciters = [
     id: 37,
     name: "شعبان الصياد",
     letter: "ش",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 37,
@@ -4772,7 +4625,6 @@ export const reciters = [
     id: 38,
     name: "شيرزاد عبدالرحمن طاهر",
     letter: "ش",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 38,
@@ -4789,7 +4641,6 @@ export const reciters = [
     id: 39,
     name: "صابر عبدالحكم",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 39,
@@ -4806,7 +4657,6 @@ export const reciters = [
     id: 4,
     name: "شيخ أبو بكر الشاطري",
     letter: "ش",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 4,
@@ -4823,7 +4673,6 @@ export const reciters = [
     id: 40,
     name: "صالح الصاهود",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 40,
@@ -4840,7 +4689,6 @@ export const reciters = [
     id: 41,
     name: "صالح آل طالب",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 41,
@@ -4857,7 +4705,6 @@ export const reciters = [
     id: 42,
     name: "صالح الهبدان",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 42,
@@ -4874,7 +4721,6 @@ export const reciters = [
     id: 43,
     name: "صلاح البدير",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 43,
@@ -4891,7 +4737,6 @@ export const reciters = [
     id: 44,
     name: "صلاح الهاشم",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 45,
@@ -4917,7 +4762,6 @@ export const reciters = [
     id: 46,
     name: "صلاح بو خاطر",
     letter: "ص",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 46,
@@ -4934,7 +4778,6 @@ export const reciters = [
     id: 47,
     name: "مختار الحاج",
     letter: "م",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 283,
@@ -4952,7 +4795,6 @@ export const reciters = [
     id: 48,
     name: "عادل ريان",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 48,
@@ -4969,7 +4811,6 @@ export const reciters = [
     id: 49,
     name: "عبدالبارئ الثبيتي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 49,
@@ -4986,7 +4827,6 @@ export const reciters = [
     id: 5,
     name: "أحمد بن علي العجمي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 5,
@@ -5003,7 +4843,6 @@ export const reciters = [
     id: 50,
     name: "عبدالبارئ محمد",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 169,
@@ -5029,7 +4868,6 @@ export const reciters = [
     id: 51,
     name: "عبدالباسط عبدالصمد",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 53,
@@ -5064,7 +4902,6 @@ export const reciters = [
     id: 54,
     name: "عبدالرحمن السديس",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 54,
@@ -5081,7 +4918,6 @@ export const reciters = [
     id: 55,
     name: "عبدالعزيز الأحمد",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 55,
@@ -5098,7 +4934,6 @@ export const reciters = [
     id: 56,
     name: "عبدالعزيز الزهراني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 56,
@@ -5115,7 +4950,6 @@ export const reciters = [
     id: 57,
     name: "عبدالله البريمي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 57,
@@ -5132,7 +4966,6 @@ export const reciters = [
     id: 58,
     name: "عبدالله البعيجان",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 58,
@@ -5149,7 +4982,6 @@ export const reciters = [
     id: 59,
     name: "عبدالله المطرود",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 59,
@@ -5166,7 +4998,6 @@ export const reciters = [
     id: 6,
     name: "أحمد الحواشي",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 6,
@@ -5183,7 +5014,6 @@ export const reciters = [
     id: 60,
     name: "عبدالله بصفر",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 60,
@@ -5200,7 +5030,6 @@ export const reciters = [
     id: 61,
     name: "عبدالله خياط",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 61,
@@ -5217,7 +5046,6 @@ export const reciters = [
     id: 62,
     name: "عبدالله عواد الجهني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 62,
@@ -5234,7 +5062,6 @@ export const reciters = [
     id: 63,
     name: "عبدالله غيلان",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 63,
@@ -5251,7 +5078,6 @@ export const reciters = [
     id: 64,
     name: "عبدالرشيد صوفي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 258,
@@ -5288,7 +5114,6 @@ export const reciters = [
     id: 66,
     name: "عبدالمحسن الحارثي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 66,
@@ -5305,7 +5130,6 @@ export const reciters = [
     id: 67,
     name: "عبدالمحسن القاسم",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 67,
@@ -5322,7 +5146,6 @@ export const reciters = [
     id: 68,
     name: "عبدالمحسن العسكر",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 68,
@@ -5338,7 +5161,6 @@ export const reciters = [
     id: 69,
     name: "عبدالمحسن العبيكان",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 69,
@@ -5355,7 +5177,6 @@ export const reciters = [
     id: 7,
     name: "أحمد سعود",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 7,
@@ -5372,7 +5193,6 @@ export const reciters = [
     id: 70,
     name: "عبدالهادي أحمد كناكري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 70,
@@ -5389,7 +5209,6 @@ export const reciters = [
     id: 71,
     name: "عبدالودود حنيف",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 71,
@@ -5406,7 +5225,6 @@ export const reciters = [
     id: 72,
     name: "عبدالولي الأركاني",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 72,
@@ -5423,7 +5241,6 @@ export const reciters = [
     id: 73,
     name: "علي أبو هاشم",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 73,
@@ -5439,7 +5256,6 @@ export const reciters = [
     id: 74,
     name: "علي بن عبدالرحمن الحذيفي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 305,
@@ -5474,7 +5290,6 @@ export const reciters = [
     id: 76,
     name: "علي جابر",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 76,
@@ -5491,7 +5306,6 @@ export const reciters = [
     id: 77,
     name: "علي حجاج السويسي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 77,
@@ -5508,7 +5322,6 @@ export const reciters = [
     id: 78,
     name: "عماد زهير حافظ",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 78,
@@ -5525,7 +5338,6 @@ export const reciters = [
     id: 79,
     name: "عبدالعزيز التركي",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 282,
@@ -5542,7 +5354,6 @@ export const reciters = [
     id: 8,
     name: "أحمد صابر",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 8,
@@ -5559,7 +5370,6 @@ export const reciters = [
     id: 80,
     name: "عمر القزابري",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 80,
@@ -5576,7 +5386,6 @@ export const reciters = [
     id: 81,
     name: "فارس عباد",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 81,
@@ -5593,7 +5402,6 @@ export const reciters = [
     id: 82,
     name: "فهد العتيبي",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 82,
@@ -5609,7 +5417,6 @@ export const reciters = [
     id: 83,
     name: "فهد الكندري",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 83,
@@ -5626,7 +5433,6 @@ export const reciters = [
     id: 84,
     name: "فواز الكعبي",
     letter: "ف",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 84,
@@ -5643,7 +5449,6 @@ export const reciters = [
     id: 85,
     name: "لافي العوني",
     letter: "ل",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 85,
@@ -5660,7 +5465,6 @@ export const reciters = [
     id: 86,
     name: "ناصر القطامي",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 86,
@@ -5677,7 +5481,6 @@ export const reciters = [
     id: 87,
     name: "نبيل الرفاعي",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 87,
@@ -5694,7 +5497,6 @@ export const reciters = [
     id: 88,
     name: "نعمة الحسان",
     letter: "ن",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 88,
@@ -5711,7 +5513,6 @@ export const reciters = [
     id: 89,
     name: "هاني الرفاعي",
     letter: "ه",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 89,
@@ -5728,7 +5529,6 @@ export const reciters = [
     id: 9,
     name: "أحمد نعينع",
     letter: "أ",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 9,
@@ -5745,7 +5545,6 @@ export const reciters = [
     id: 90,
     name: "وليد الدليمي",
     letter: "و",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 90,
@@ -5762,7 +5561,6 @@ export const reciters = [
     id: 91,
     name: "وليد النائحي",
     letter: "و",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 91,
@@ -5779,7 +5577,6 @@ export const reciters = [
     id: 92,
     name: "ياسر الدوسري",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 92,
@@ -5796,7 +5593,6 @@ export const reciters = [
     id: 93,
     name: "ياسر القرشي",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 93,
@@ -5813,7 +5609,6 @@ export const reciters = [
     id: 94,
     name: "ياسر الفيلكاوي",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 94,
@@ -5830,7 +5625,6 @@ export const reciters = [
     id: 95,
     name: "ياسر المزروعي ",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 95,
@@ -5847,7 +5641,6 @@ export const reciters = [
     id: 96,
     name: "يحيى حوا",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 96,
@@ -5864,7 +5657,6 @@ export const reciters = [
     id: 97,
     name: "يوسف الشويعي",
     letter: "ي",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 97,
@@ -5881,7 +5673,6 @@ export const reciters = [
     id: 98,
     name: "عبدالله عبدل",
     letter: "ع",
-    date: "2025-08-30T21:47:54.000000Z",
     moshaf: [
       {
         id: 284,
@@ -5893,6 +5684,65 @@ export const reciters = [
           "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114",
       },
     ],
+  },
+];
+export const morningAzkar = [
+  {
+    id: 1,
+    arabic: "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ",
+    count: 1,
+  },
+  {
+    id: 2,
+    arabic:
+      "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ",
+    count: 1,
+  },
+  {
+    id: 3,
+    arabic: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+    count: 100,
+  },
+];
+
+export const eveningAzkar = [
+  {
+    id: 1,
+    arabic: "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ",
+    count: 1,
+  },
+  {
+    id: 2,
+    arabic:
+      "اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ",
+    count: 1,
+  },
+  {
+    id: 3,
+    arabic: "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ",
+    count: 100,
+  },
+];
+export const prayerTimeDescription = [
+  {
+    name: "الفجر",
+    desc: "تبدأ مع بزوغ الفجر إيذانًا ببداية يوم جديد.",
+  },
+  {
+    name: "الظهر",
+    desc: "حين تزول الشمس عن كبد السماء، وقت الراحة والتقرب إلى الله.",
+  },
+  {
+    name: "العصر",
+    desc: "وقت في منتصف النهار، دعوة للتأمل والمداومة على العبادة.",
+  },
+  {
+    name: "المغرب",
+    desc: "عند غروب الشمس، لحظة ختام النهار وشكر النعم.",
+  },
+  {
+    name: "العشاء",
+    desc: "آخر صلاة في اليوم، تريح القلب قبل النوم.",
   },
 ];
 //interfaces

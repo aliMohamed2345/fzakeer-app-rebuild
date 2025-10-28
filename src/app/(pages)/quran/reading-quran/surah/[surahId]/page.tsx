@@ -137,7 +137,7 @@ const SurahId = () => {
                 className={`bg-muted border text-center transition border-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32
                   ${
                     +surahId! === 1
-                      ? "opacity-50 cursor-not-allowed pointer-events-none hover:bg-muted hover:text-primary"
+                      ? "opacity-50 cursor-not-allowed pointer-events-none hover:bg-muted hover:text-primary active:bg-muted active:text-primary"
                       : "hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary"
                   }`}
               >
@@ -149,7 +149,7 @@ const SurahId = () => {
                 className={`bg-muted border text-center transition border-primary rounded-lg p-3 text-sm sm:text-xl font-bold w-24 sm:w-32
                   ${
                     +surahId! === 114
-                      ? "opacity-50 cursor-not-allowed pointer-events-none hover:bg-muted hover:text-primary"
+                      ? "opacity-50 cursor-not-allowed pointer-events-none hover:bg-muted hover:text-primary active:bg-muted active:text-primary"
                       : "hover:bg-primary hover:text-muted active:bg-primary active:text-muted text-primary"
                   }`}
               >

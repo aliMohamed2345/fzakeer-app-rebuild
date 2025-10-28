@@ -31,7 +31,7 @@ const ListenToQuranOptions = ({
           e.stopPropagation();
           onToggle();
         }}
-        className="transition-all bg-primary/10 hover:bg-primary/20 active:bg-primary/30 rounded-full p-2 border border-primary/20 cursor-pointer"
+        className="transition-all bg-primary/10 hover:bg-primary/20 active:bg-primary/20 rounded-full p-2 border border-primary/20 cursor-pointer"
         aria-label="خيارات السورة"
       >
         <SlOptionsVertical className="text-primary text-lg" />
@@ -59,7 +59,7 @@ const ListenToQuranOptions = ({
               handleDownloadSurah(currentAudio, surahFileName);
               onToggle();
             }}
-            className="flex items-center justify-center gap-2 sm:justify-between bg-muted hover:bg-primary hover:text-background transition rounded-xl p-2 font-semibold text-base shadow-sm cursor-pointer"
+            className="flex items-center justify-center gap-2 sm:justify-between bg-muted hover:bg-primary hover:text-background active:bg-primary active:text-background transition rounded-xl p-2 font-semibold text-base shadow-sm cursor-pointer"
           >
             تحميل <MdOutlineFileDownload className="text-lg" />
           </button>
@@ -69,7 +69,7 @@ const ListenToQuranOptions = ({
               copyToClipBoard(currentAudio);
               onToggle();
             }}
-            className="flex items-center justify-center gap-2 sm:justify-between bg-muted hover:bg-primary hover:text-background transition rounded-xl p-2 font-semibold text-base shadow-sm cursor-pointer"
+            className="flex items-center justify-center gap-2 sm:justify-between bg-muted hover:bg-primary hover:text-background active:bg-primary active:text-background transition rounded-xl p-2 font-semibold text-base shadow-sm cursor-pointer"
           >
             نسخ الرابط <MdOutlineContentCopy className="text-lg" />
           </button>

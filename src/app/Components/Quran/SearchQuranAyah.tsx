@@ -12,7 +12,7 @@ const SearchQuranAyah = ({ result }: SearchQueryAyah) => {
   return (
     <Link
       href={`/quran/reading-quran/surah/${surahNumber}#ayah-${ayahNumber}`}
-      className="block bg-muted p-5 sm:p-8 rounded-3xl border-2 border-background shadow-lg hover:shadow-xl hover:scale-[1.01] hover:border-primary/70 active:border-primary transition-all duration-300 mx-auto w-full max-w-[1100px]"
+      className="block bg-muted p-5 sm:p-8 rounded-3xl border-2 border-background shadow-lg hover:shadow-xl hover:scale-[1.01] hover:border-primary/70 active:border-primary/70 active:shadow-xl active:scale-[1.01] transition-all duration-300 mx-auto w-full max-w-[1100px]"
     >
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap mb-3 border-b border-primary/20 pb-2">

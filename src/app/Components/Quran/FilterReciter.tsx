@@ -50,7 +50,7 @@ const FilterReciter = () => {
       <button
         onClick={() => setIsFilterOpened(true)}
         className="p-2 rounded-lg border border-primary transition-all duration-300 h-10 w-10 flex items-center justify-center cursor-pointer 
-        text-primary hover:bg-primary hover:text-background active:scale-95 shadow-sm hover:shadow-md"
+        text-primary hover:bg-primary hover:text-background hover:shadow-md active:bg-primary active:text-background active:shadow-md active:scale-95 shadow-sm "
         aria-label="Open Filter"
       >
         <CiFilter size={26} />
@@ -79,7 +79,7 @@ const FilterReciter = () => {
         {/* Close Button */}
         <button
           onClick={() => setIsFilterOpened(false)}
-          className="absolute top-3 right-3 p-2 rounded-full hover:bg-muted/60 text-muted-foreground hover:text-foreground transition-all cursor-pointer"
+          className="absolute top-3 right-3 p-2 rounded-full hover:bg-muted/60 hover:text-foreground active:bg-muted/60 active:text-foreground text-muted-foreground  transition-all cursor-pointer"
           aria-label="Close Filter"
         >
           <IoClose size={22} />
@@ -121,13 +121,13 @@ const FilterReciter = () => {
           <div className="flex justify-between mt-8">
             <button
               onClick={handleCancleSelection}
-              className="px-6 py-2 rounded-lg border border-primary/50 text-primary hover:bg-primary/10 transition-all cursor-pointer"
+              className="px-6 py-2 rounded-lg border border-primary/50 text-primary hover:bg-primary/10 active:bg-primary/10 transition-all cursor-pointer"
             >
               إلغاء
             </button>
             <button
               onClick={handleApplyFilters}
-              className="px-6 py-2 rounded-lg bg-primary text-background hover:bg-primary/90 transition-all cursor-pointer"
+              className="px-6 py-2 rounded-lg bg-primary text-background hover:bg-primary/90 active:bg-primary/90 transition-all cursor-pointer"
             >
               تطبيق الفلاتر
             </button>

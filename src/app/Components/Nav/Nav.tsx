@@ -9,7 +9,7 @@ const Nav = () => {
   const path = usePathname();
 
   return (
-    <header className=" shadow-md bg-primary fixed w-full z-10 ">
+    <header className=" shadow-md bg-primary fixed w-full z-50 ">
       <div className="mx-auto max-w-screen-xl px-2 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="hidden md:flex md:gap-5 md:flex-row-reverse">

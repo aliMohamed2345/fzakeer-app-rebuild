@@ -30,7 +30,7 @@ const ReadingQuran = () => {
         <div className="relative my-5 w-[70vw] sm:w-[50vw] md:w-[35vw] flex justify-center rounded-full mx-auto p-1 font-bold bg-background">
           <button
             onClick={() => setCurrentMode("surah")}
-            className={`w-full cursor-pointer hover:bg-primary hover:text-muted p-4 text-lg sm:text-2xl transition rounded-l-full ${
+            className={`w-full cursor-pointer hover:bg-primary hover:text-muted active:bg-primary active:text-muted p-4 text-lg sm:text-2xl transition rounded-l-full ${
               currentMode === "surah" && "bg-primary text-muted"
             }`}
           >
@@ -41,7 +41,7 @@ const ReadingQuran = () => {
 
           <button
             onClick={() => setCurrentMode("juz")}
-            className={`w-full cursor-pointer hover:bg-primary hover:text-muted p-4 text-lg sm:text-2xl transition rounded-r-full ${
+            className={`w-full cursor-pointer hover:bg-primary hover:text-muted active:bg-primary active:text-muted p-4 text-lg sm:text-2xl transition rounded-r-full ${
               currentMode === "juz" && "bg-primary text-muted"
             }`}
           >
@@ -74,7 +74,7 @@ const ReadingQuran = () => {
                   <Link
                     href={`/quran/reading-quran/surah/${surah.number}`}
                     key={i}
-                    className="group flex items-center justify-between sm:p-6 p-3 rounded-2xl bg-card hover:bg-primary/10 border border-border shadow-sm hover:shadow-md transition-all cursor-pointer text-right"
+                    className="group flex items-center justify-between sm:p-6 p-3 rounded-2xl bg-card hover:bg-primary/10 active:bg-primary/10 border border-border shadow-sm hover:shadow-md active:shadow-md transition-all cursor-pointer text-right"
                   >
                     <div className="flex gap-2 items-center sm:min-w-[150px] min-w-[100px]">
                       <p className="bg-primary/20 text-primary font-semibold rounded-xl px-3 py-1 sm:px-4 sm:py-2 text-center">
@@ -86,7 +86,7 @@ const ReadingQuran = () => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <p className="text-lg sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                      <p className="text-lg sm:text-2xl font-bold text-foreground group-hover:text-primary group-active:text-primary transition-colors">
                         {surah.name}
                       </p>
                       <span className="rounded-full bg-primary text-primary-foreground font-semibold sm:w-10 sm:h-10 w-8 h-8 flex items-center justify-center shadow-inner">
@@ -109,11 +109,11 @@ const ReadingQuran = () => {
               <Link
                 href={`/quran/reading-quran/juz/${juz.number}`}
                 key={juz.number}
-                className="group flex flex-col justify-between p-5 sm:p-6 rounded-2xl bg-card hover:bg-primary/10 border border-border shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer text-right"
+                className="group flex flex-col justify-between p-5 sm:p-6 rounded-2xl bg-card hover:bg-primary/10 active:bg-primary/10 border border-border shadow-sm hover:shadow-md active:shadow-md transition-all duration-300 cursor-pointer text-right"
               >
                 {/* 🕋 Juz Header */}
                 <div className="flex justify-between items-center mb-3 ">
-                  <p className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
+                  <p className="text-lg sm:text-xl font-bold text-primary group-hover:text-primary/80 group-active:text-primary/80 transition-colors">
                     عدد السور: {juz.surahs.length}
                   </p>
                   <span className="bg-primary text-primary-foreground font-semibold rounded-xl px-4 py-2 text-lg shadow-inner">
@@ -126,7 +126,7 @@ const ReadingQuran = () => {
                   {juz.surahs.slice(0,5).map((surah, j) => (
                     <span
                       key={j}
-                      className="bg-muted text-foreground/90 font-medium rounded-xl px-3 py-1 text-center hover:bg-primary/20 transition"
+                      className="bg-muted text-foreground/90 font-medium rounded-xl px-3 py-1 text-center hover:bg-primary/20 active:bg-primary/20 transition"
                     >
                       {surah}
                     </span>

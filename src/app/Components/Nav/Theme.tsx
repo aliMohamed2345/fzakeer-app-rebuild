@@ -32,7 +32,7 @@ const Theme = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative w-10 h-10 rounded-full border-primary bg-background backdrop-blur-md border cursor-pointer hover:bg-secondary hover:text-primary-foreground transition-all duration-300 overflow-hidden"
+      className="relative w-10 h-10 rounded-full border-primary bg-background backdrop-blur-md border cursor-pointer hover:bg-secondary hover:text-primary-foreground active:bg-secondary active:text-primary-foreground transition-all duration-300 overflow-hidden"
     >
       <div className="relative w-full h-full">
         {/* Sun Icon */}

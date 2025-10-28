@@ -54,7 +54,7 @@ const ListenToQuran = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-2">
             {filteredReciters.map((reciter) => (
               <Link
-                className="text-center bg-background p-2 rounded-lg transition hover:bg-primary hover:text-background text-xl font-bold"
+                className="text-center bg-background p-2 rounded-lg transition hover:bg-primary hover:text-background active:bg-primary active:text-background text-xl font-bold"
                 key={reciter.id}
                 href={`/quran/listen-to-quran/${reciter.id}${
                   rewayahId ? `?rewayahId=${rewayahId}` : ""

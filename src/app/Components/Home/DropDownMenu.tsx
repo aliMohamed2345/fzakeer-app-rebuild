@@ -48,7 +48,7 @@ const DropDownMenu = ({
       >
         <span>{selected}</span>
         <IoIosArrowDown
-          className={` hover:text-muted transition-transform duration-300 ${
+          className={` hover:text-muted active:text-muted transition-transform duration-300 ${
             isOpen && "rotate-180 "
           }`}
           size={20}
